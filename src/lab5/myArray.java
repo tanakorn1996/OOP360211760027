@@ -4,26 +4,32 @@ import java.util.Scanner;
 
 public class myArray {
     public static void main(String[] args) {
-        //array
-        int a [] = new int[5];
+        // array
+
+        int a[] = new int[5];
         System.out.println(a[0]);
         a[0] = 10;
         System.out.println(a[0]);
-         //input data to array
+        //input data to array
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < a.length; i++) {
-            System.out.print("a[" + i + "]");
+            System.out.print("a["+i+"]: ");
             a[i] = sc.nextInt();
         }
-        //show data to array
-        System.out.println("Data in array");
+
+        //show data in array
+        System.out.println("Data in array:");
         for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]+"\t");
+            System.out.print(a[i]+"\t");
+
         }
         System.out.println("\nEnhanced for Loop");
         //enhanced for loop
         for (int val:a){
-            System.out.println(val+"\t");
+            System.out.print(val+"\t");
         }
+
+
+
     }
-}//Class
+}//class
