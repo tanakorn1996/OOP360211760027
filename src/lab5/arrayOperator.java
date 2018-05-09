@@ -16,10 +16,20 @@ public class arrayOperator {
         showData(myArray);
         //find averge
         findAverage(myArray);
-        findMAX(myArray)
+        findMAX(myArray);
+        findMin(myArray);
 
 
     }  //main
+
+    private static void findMin(int[] myArray) {
+        int min = myArray[0];
+        for (int i = 0;i < myArray.length;i++){
+            if (min<=myArray[i])
+                min =myArray[i];
+        }
+        System.out.append("The minimum value is "+min)
+    }
 
     private static void findMAX(int[] myArray) {
         int max = myArray[0];
