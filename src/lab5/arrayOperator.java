@@ -1,5 +1,4 @@
 package lab5;
-package lab5;
 
 import java.util.Scanner;
 
@@ -28,7 +27,7 @@ public class arrayOperator {
             if (min<=myArray[i])
                 min =myArray[i];
         }
-        System.out.append("The minimum value is "+min)
+        System.out.print("The minimum value is "+min);
     }
 
     private static void findMAX(int[] myArray) {
@@ -37,14 +36,14 @@ public class arrayOperator {
             if (max<=myArray[i])
                 max =myArray[i];
         }
-        System.out.append("The maximum value is "+max)
+        System.out.print("The maximum value is "+max);
     }
 
     private static void findAverage(int[] myArray) {
         int total = 0;
         for (int val :myArray)
             total += val;
-        System.out.append("The average value is "+(total/MAX));
+        System.out.print("The average value is "+(total/MAX));
     }
 
     private static void showData(int[] myArray) {
