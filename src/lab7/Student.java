@@ -1,24 +1,24 @@
 package lab7;
 //1.name
-//2.age
-//3.gander
-//4.height
+//2. age
+//3. gender
+//4. height
 
 public class Student {
     //properties of student class
-    private String  name;
+    private String name;
     private int age;
-    private String gander;
+    private String gender;
     private double height;
     //default constructor
-    public Student (){}
+    public Student(){}
     //design constructor
 
 
-    public Student(String name, int age, String gander, double height) {
+    public Student(String name, int age, String gender, double height) {
         this.name = name;
         this.age = age;
-        this.gander = gander;
+        this.gender = gender;
         this.height = height;
     }
 
@@ -27,7 +27,7 @@ public class Student {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", gander='" + gander + '\'' +
+                ", gender='" + gender + '\'' +
                 ", height=" + height +
                 '}';
     }
@@ -48,12 +48,12 @@ public class Student {
         this.age = age;
     }
 
-    public String getGander() {
-        return gander;
+    public String getGender() {
+        return gender;
     }
 
-    public void setGander(String gander) {
-        this.gander = gander;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public double getHeight() {
@@ -64,4 +64,3 @@ public class Student {
         this.height = height;
     }
 }//class
-
