@@ -9,7 +9,7 @@ public class sutdentApp {
         s1.setHeight(180);
         System.out.print(s1.toString());
 
-        String s2 = new  Student ("Safe",90,"Female",190);
+        Student s2 = new  Student ("Safe",90,"Female",190);
         System.out.print(s2.toString());
     }
 }
