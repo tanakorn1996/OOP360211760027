@@ -8,14 +8,30 @@ import java.util.ArrayList;
 public class studentAppArrayList {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("How many data you do have: ");
-        int va1 = Integer.parseInt(reader.readLine());
+        System.out.print("How many data you do have? : ");
+        int val = Integer.parseInt(reader.readLine());
         ArrayList<Student> myList = new ArrayList<Student>();
-        inputData (myList,va1);
+        myList = inputData(myList, val);
+    }//main
 
+    private static ArrayList inputData(ArrayList<Student> myList, int val) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Student s = new Student();
+        for (int i = 1; i <= val; i++) {
+            System.out.println("Enter student info "+i+" : ");
+            System.out.print("Name: ");
+            s.setName(reader.readLine());
+            System.out.print("Age: ");
+            s.setAge(Integer.parseInt(reader.readLine()));
+            System.out.print("Gender: ");
+            s.setGender(reader.readLine());
+            System.out.print("Height: ");
+            s.setHeight(Double.parseDouble(reader.readLine()));
+            myList.add(s);
+        }
+
+        return myList;
     }
 
-    private static ArrayList inputData(ArrayList<Student> myList, int va1) {
-    }
 
 }//class
