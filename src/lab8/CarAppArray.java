@@ -10,12 +10,7 @@ public class CarAppArray {
         e.setEngSize(2500);
         e.setHorsePower(150);
 
-        //create car object
-        Car c = new Car();
-        c.setColor("Red");
-        c.setBrand("Honda");
-        c.setCarID("กข-1234");
-        c.setEngine(e);
+
 
         System.out.println(c.toString());
 
