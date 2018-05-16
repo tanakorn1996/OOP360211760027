@@ -1,9 +1,19 @@
 package lab8;
 
-public class Pet {
+public abstract class Pet {
     private String name;
-    private  int age;
+    private int age;
 
+
+    public abstract void makeNoise();
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 
     public String getName() {
         return name;
