@@ -28,7 +28,7 @@ public class petAppArrayList {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Please enter you pets info.\n");
         for (int i = 1; i <= val; i++) {
-            System.out.print("Pet: "+i+". if it is a \"Dog\" type 1 or \"Cat\" type other.    : ");
+            System.out.print("Pet: "+i+". if it is a \"Dog\" type 1 or \"cat\" type other.    : ");
             int t = Integer.parseInt(reader.readLine());
             if (t == 1) {
                 Dog d = new Dog();
